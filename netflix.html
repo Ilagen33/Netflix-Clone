@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix - HomePage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header>
+
+      <!-- NAV -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0" aria-label="Third navbar example">
+        <div class="container-fluid ps-1 pe-4">
+
+          <!-- LOGO -->
+          <a class="navbar-brand" href="#">
+            <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="Logo di Netflix"/>
+          </a>
+
+          <!-- BURGER MENU -->
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+
+            <!-- LEFT-UL (MENU)-->
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link">My List</a>
+              </li>
+              </ul>
+          </div>
+
+          <!-- RIGTH-UL (Search, Kids, notifcations and account settings)-->
+          <ul class="navbar-nav me-2 my-2 flex-row gap-3 rigth">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">
+                <i class="bi bi-search"></i>
+              </a>
+            </li>
+            <li class="nav-item kids">
+              <a class="nav-link text-light">KIDS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light">
+                <i class="bi bi-bell-fill"></i>
+              </a>
+            </li>
+          </ul>
+
+          <!-- DROPDOWN-MENU (Account) -->
+          <div class="nav-item dropdown my-2">
+            <a class="nav-link dropdown-toggle show text-white" href="#" data-bs-toggle="dropdown" aria-expanded="true">
+              <img src="./assets/imgs/Netflix-avatar.png" alt="Avatar Account Netflix"/>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end py-0 my-1" data-bs-popper="static">
+              <li>
+                <a class="dropdown-item rounded-pill text-light link-body-emphasis-hover" href="#">Gestisci</a>
+              </li>
+              <li>
+                <a class="dropdown-item rounded-pill text-light" href="#">Account</a>
+              </li>
+              <li>
+                <a class="dropdown-item rounded-pill link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- FIRST SECTION (TITLE & SORT)-->
+      <section>
+        <div class="container-fluid py-2">
+          <div class="row d-flex align-items-center">
+            <div class="col">
+              <div class="d-flex align-items-center gap-3">
+                <h1 class="text-white me-4">TV Shows</h1>
+
+                <!-- Dropdown btn (Genres) -->
+                <div class="dropdown">
+                  <button class="btn btn-black dropdown-toggle border border-light text-white rounded-0" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Genres </button>
+                  <ul class="dropdown-menu py-0">
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Comedy</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Drama</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Horror</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Adventure</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Fantasy</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Romance</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Thriller</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light" href="#">Fantasy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Icone filtro -->
+            <div class="col filtro pe-4">
+              <i class="bi bi-text-left text-light border border-light py-1 px-3"></i>
+              <i class="bi bi-grid text-light border border-light py-1 px-3"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINTI CAROSELLI -->
+      <!-- SECOND SECTION FIRST CAROUSEL -->
+      <section class="trending-now ps-3 py-3">
+        <h3 class="text-light">Trending Now</h3>
+        <div class="d-flex gap-1 overflow-x-hidden py-2">
+          <img src="./assets/imgs/movies/1.png" alt="Foto del film 1" />
+          <img src="./assets/imgs/movies/2.png" alt="Foto del film 2" />
+          <img src="./assets/imgs/movies/3.png" alt="Foto del film 3" />
+          <img src="./assets/imgs/movies/4.png" alt="Foto del film 4" />
+          <img src="./assets/imgs/movies/5.png" alt="Foto del film 5" />
+          <img src="./assets/imgs/movies/6.png" alt="Foto del film 6" />
+          <img src="./assets/imgs/movies/7.png" alt="Foto del film 7" />
+        </div>
+      </section>
+
+      <!-- THIRD SECTION SECOND CAROUSEL -->
+      <section class="watch-it-again ps-3 py-4">
+        <h3 class="text-light">Watch It Again</h3>
+        <div class="d-flex gap-1 overflow-x-hidden py-2">
+          <img src="./assets/imgs/movies/7.png" alt="Foto del film 7" />
+          <img src="./assets/imgs/movies/8.png" alt="Foto del film 8" />
+          <img src="./assets/imgs/movies/9.png" alt="Foto del film 9" />
+          <img src="./assets/imgs/movies/10.png" alt="Foto del film 10" />
+          <img src="./assets/imgs/movies/11.png" alt="Foto del film 11" />
+          <img src="./assets/imgs/movies/12.png" alt="Foto del film 12" />
+          <img src="./assets/imgs/movies/13.png" alt="Foto del film 13" />
+        </div>
+      </section>
+
+      <!-- FOURTH SECTION THIRD CAROUSEL -->
+      <section class="new-releases ps-3 py-3 pb-1">
+        <h3 class="text-light">New Releases</h3>
+        <div class="d-flex gap-1 overflow-x-hidden py-2">
+          <img src="./assets/imgs/movies/13.png" alt="Foto del film 13" />
+          <img src="./assets/imgs/movies/14.png" alt="Foto del film 14" />
+          <img src="./assets/imgs/movies/15.png" alt="Foto del film 15" />
+          <img src="./assets/imgs/movies/16.png" alt="Foto del film 16" />
+          <img src="./assets/imgs/movies/17.png" alt="Foto del film 17" />
+          <img src="./assets/imgs/movies/18.png" alt="Foto del film 18" />
+          <img src="./assets/imgs/movies/1.png" alt="Foto del film 1" />
+        </div>
+      </section>
+      
+      <!-- 1° Sezione che apparirà con una transizione -->
+      <section class="trending-now ps-3 py-3" id="animato">
+        <h3 class="text-light">Trending Now</h3>
+        <div class="d-flex gap-1 overflow-x-hidden py-2">
+          <img src="./assets/imgs/movies/1.png" alt="Foto del film 1" />
+          <img src="./assets/imgs/movies/2.png" alt="Foto del film 2" />
+          <img src="./assets/imgs/movies/3.png" alt="Foto del film 3" />
+          <img src="./assets/imgs/movies/4.png" alt="Foto del film 4" />
+          <img src="./assets/imgs/movies/5.png" alt="Foto del film 5" />
+          <img src="./assets/imgs/movies/6.png" alt="Foto del film 6" />
+          <img src="./assets/imgs/movies/7.png" alt="Foto del film 7" />
+        </div>
+      </section>
+  
+      <!-- 2° Sezione che apparirà con una transizione -->
+      <section class="watch-it-again ps-3 py-4" id="animato2">
+        <h3 class="text-light">Watch It Again</h3>
+        <div class="d-flex gap-1 overflow-x-hidden py-2">
+          <img src="./assets/imgs/movies/7.png" alt="Foto del film 7" />
+          <img src="./assets/imgs/movies/8.png" alt="Foto del film 8" />
+          <img src="./assets/imgs/movies/9.png" alt="Foto del film 9" />
+          <img src="./assets/imgs/movies/10.png" alt="Foto del film 10" />
+          <img src="./assets/imgs/movies/11.png" alt="Foto del film 11" />
+          <img src="./assets/imgs/movies/12.png" alt="Foto del film 12" />
+          <img src="./assets/imgs/movies/13.png" alt="Foto del film 13" />
+        </div>
+      </section>
+  
+      <!-- 3° Sezione che apparirà con una transizione -->
+      <section class="new-releases ps-3 py-3 pb-1" id="animato3">
+        <h3 class="text-light">New Releases</h3>
+        <div class="d-flex gap-1 overflow-x-hidden py-2">
+          <img src="./assets/imgs/movies/13.png" alt="Foto del film 13" />
+          <img src="./assets/imgs/movies/14.png" alt="Foto del film 14" />
+          <img src="./assets/imgs/movies/15.png" alt="Foto del film 15" />
+          <img src="./assets/imgs/movies/16.png" alt="Foto del film 16" />
+          <img src="./assets/imgs/movies/17.png" alt="Foto del film 17" />
+          <img src="./assets/imgs/movies/18.png" alt="Foto del film 18" />            
+          <img src="./assets/imgs/movies/1.png" alt="Foto del film 1" />
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class=" d-flex pb-1">
+      <div class="container d-flex flex-column pt-5">
+
+        <!-- Social -->
+        <div class="mb-3">
+          <i class="bi bi-facebook text-white-50 me-2"></i>
+          <i class="bi bi-instagram text-white-50 me-2"></i>
+          <i class="bi bi-twitter text-white-50 me-2"></i>
+          <i class="bi bi-youtube text-white-50"></i>
+        </div>
+
+        <!-- Links -->
+        <div class="row">
+
+          <!-- Colonna 1 -->
+          <div class="col mb-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Audio and Subtitles</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Media Center</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Privacy</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonna 2 -->
+          <div class="col mb-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Audio Description</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Investor Relations</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Legal Notices</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonna 3 -->
+          <div class="col mb-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Help Center</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Jobs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Cookie Preferences</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonna 4 -->
+          <div class="col mb-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Gift Cards</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Terms of Use</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white-50">Corporate Information</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service Code Button -->
+        <div>
+          <button class="text-white-50 p-2 border border-light mb-2">Service Code</button>
+        </div>
+
+        <!-- Marchio registrato -->
+        <div>
+          <p class="text-white-50">© 1997-2019 Netflix, Inc. {i-0d00fcda2fdf9c0de}</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
